@@ -26,20 +26,53 @@ public class Main {
 
 	public static void main(String[] args) {
 		Scanner scn = new Scanner(System.in);
-		System.out.println("---------------------------------------------------------------------------------------------------------");
-		System.out.println("Java SE 6 Collection Benchmark");
-		System.out.println("Author: Caio Ribeiro Pereira");
-		System.out.println("Twitter: crp_underground");
-		System.out.println("GitHub: https://github.com/caio-ribeiro-pereira/CollectionsBenchmark");
-		System.out.println("---------------------------------------------------------------------------------------------------------");
-		System.out.print("Type the number of elements for the collections: ");
-		int max = scn.nextInt();
-		System.out.println("Adding: " + max + " Objects.");
-		System.out.println("Starting...");
-		System.out.println("---------------------------------------------------------------------------------------------------------");
-		setBenchmark(max);
-		listBenchmark(max);
-		mapBenchmark(max);
+		int max;
+		int option;
+		do {
+			System.out.println("---------------------------------------------------------------------------------------------------------");
+			System.out.println("Java SE 6 Collection Benchmark");
+			System.out.println("Author: Caio Ribeiro Pereira");
+			System.out.println("Twitter: crp_underground");
+			System.out.println("GitHub: https://github.com/caio-ribeiro-pereira/CollectionsBenchmark");
+			System.out.println("---------------------------------------------------------------------------------------------------------");
+			System.out.print("Type the number of elements for the collections: ");
+			max = scn.nextInt();
+			System.out.println("Adding: " + max + " Objects.");
+			System.out.println("Starting...");
+			System.out.println("---------------------------------------------------------------------------------------------------------");
+			System.out.println(" 1 - ListBenchmark");
+			System.out.println(" 2 - SetBenchmark");
+			System.out.println(" 3 - MapBenchmark");
+			System.out.println(" 4 - All Benchmark");
+			System.out.println(" 0 - Exit");
+			option = scn.nextInt();
+			switch (option) {
+			case 0:
+				System.out.println("Bye-bye!");
+				break;
+			case 1:
+				listBenchmark(max);
+				break;
+			case 2:
+				setBenchmark(max);
+				break;
+			case 3:
+				mapBenchmark(max);
+				break;
+			case 4:
+				listBenchmark(max);
+				setBenchmark(max);
+				mapBenchmark(max);
+				break;
+			default:
+				System.out.println("Choose a right option.");
+				break;
+			}
+			if (option > 0) {
+				System.out.println("Do you wish try again? (1 - Yes | 0 - No):");
+				option = scn.nextInt();
+			}
+		} while (option != 0);
 	}
 
 	private static void setBenchmark(int max) {
@@ -66,14 +99,15 @@ public class Main {
 		System.out.println("---------------------------------------------------------------------------------------------------------");
 		printBenchmark(benchmark);
 		System.out.println("---------------------------------------------------------------------------------------------------------");
-
 	}
 
 	private static void printBenchmark(BenchMark benchmark) {
 		Map<String, Long> resultado = benchmark.execute();
 		Set<String> keys = resultado.keySet();
+		System.out.printf("\t%47s | Time\n", "Collection");
+		System.out.println("---------------------------------------------------------------------------------------------------------");
 		for (String key : keys) {
-			System.out.printf("Collection: %47s | Time: %d nanoseconds.\n", key, resultado.get(key));
+			System.out.printf("\t%47s | %d nanoseconds.\n", key, resultado.get(key));
 		}
 		System.out.println("Total of Collections: " + benchmark.totalCollection());
 		System.out.println("Time elapsed: " + benchmark.totalTime() + " nanoseconds.");
