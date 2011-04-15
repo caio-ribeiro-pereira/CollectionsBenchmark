@@ -27,15 +27,15 @@ public class Main {
 	public static void main(String[] args) {
 		Scanner scn = new Scanner(System.in);
 		System.out.println("---------------------------------------------------------------------------------------------------------");
-		System.out.println("Java SE 6 Collections Benchmark");
-		System.out.println("Autor: Caio Ribeiro Pereira");
+		System.out.println("Java SE 6 Collection Benchmark");
+		System.out.println("Author: Caio Ribeiro Pereira");
 		System.out.println("Twitter: crp_underground");
 		System.out.println("GitHub: https://github.com/caio-ribeiro-pereira/CollectionsBenchmark");
 		System.out.println("---------------------------------------------------------------------------------------------------------");
-		System.out.print("Digite o total de elementos a inserir nas Collections: ");
+		System.out.print("Type the number of elements for the collections: ");
 		int max = scn.nextInt();
-		System.out.println("Inserindo: " + max + " Objects");
-		System.out.println("Iniciando...");
+		System.out.println("Adding: " + max + " Objects.");
+		System.out.println("Starting...");
 		System.out.println("---------------------------------------------------------------------------------------------------------");
 		setBenchmark(max);
 		listBenchmark(max);
@@ -44,7 +44,7 @@ public class Main {
 
 	private static void setBenchmark(int max) {
 		SetBenchmark benchmark = new SetBenchmark(max);
-		System.out.println("Executando Variações de Sets.");
+		System.out.println("Benchmarking Sets.");
 		System.out.println("---------------------------------------------------------------------------------------------------------");
 		printBenchmark(benchmark);
 		System.out.println("---------------------------------------------------------------------------------------------------------");
@@ -53,7 +53,7 @@ public class Main {
 
 	private static void listBenchmark(int max) {
 		ListBenchmark benchmark = new ListBenchmark(max);
-		System.out.println("Executando Variações de Lists.");
+		System.out.println("Benchmarking Lists.");
 		System.out.println("---------------------------------------------------------------------------------------------------------");
 		printBenchmark(benchmark);
 		System.out.println("---------------------------------------------------------------------------------------------------------");
@@ -62,7 +62,7 @@ public class Main {
 
 	private static void mapBenchmark(int max) {
 		MapBenchmark benchmark = new MapBenchmark(max);
-		System.out.println("Executando Variações de Maps.");
+		System.out.println("Benchmarking Maps.");
 		System.out.println("---------------------------------------------------------------------------------------------------------");
 		printBenchmark(benchmark);
 		System.out.println("---------------------------------------------------------------------------------------------------------");
@@ -73,10 +73,10 @@ public class Main {
 		Map<String, Long> resultado = benchmark.execute();
 		Set<String> keys = resultado.keySet();
 		for (String key : keys) {
-			System.out.printf("Instância: %47s | Tempo: %d nanosegundos\n", key, resultado.get(key));
+			System.out.printf("Collection: %47s | Time: %d nanoseconds.\n", key, resultado.get(key));
 		}
-		System.out.println("Total de Collections: " + benchmark.totalCollection());
-		System.out.println("Tempo total de execução: " + benchmark.totalTime() + " nanosegundos");
+		System.out.println("Total of Collections: " + benchmark.totalCollection());
+		System.out.println("Time elapsed: " + benchmark.totalTime() + " nanoseconds.");
 	}
 
 }
