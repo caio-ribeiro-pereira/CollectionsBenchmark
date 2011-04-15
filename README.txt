@@ -12,8 +12,7 @@ Como utilizar?
 4 - ** Determine o número de elementos que serão inseridos no benchmark.
 
 Exemplo de resultado gerado:
-
-	HashMap -> HashMap | 9016000 nanoseconds. = HashMap<Object, Object> map = new HashMap<Object, Object>();
+HashMap -> HashMap | 9016000 nanoseconds. = HashMap<Object, Object> map = new HashMap<Object, Object>();
         Map -> HashMap | 4931000 nanoseconds. = Map<Object, Object> map = new HashMap<Object, Object>();
      List -> ArrayList | 4000050 nanoseconds. = List<Object> list = new ArrayList<Object>();
     TreeSet -> TreeSet | 702000 nanoseconds.  = TreeSet<Object> set = new TreeSet<Object>();
