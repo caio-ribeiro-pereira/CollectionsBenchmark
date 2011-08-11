@@ -107,10 +107,10 @@ public class Main {
 		System.out.printf("\t%47s | Time\n", "Collection");
 		System.out.println("---------------------------------------------------------------------------------------------------------");
 		for (String key : keys) {
-			System.out.printf("\t%47s | %d nanoseconds.\n", key, resultado.get(key));
+			System.out.printf("\t%47s | %d milliseconds.\n", key, resultado.get(key));
 		}
 		System.out.println("Total of Collections: " + benchmark.totalCollection());
-		System.out.println("Time elapsed: " + benchmark.totalTime() + " nanoseconds.");
+		System.out.println("Time elapsed: " + benchmark.totalTime() + " milliseconds.");
 	}
 
 }

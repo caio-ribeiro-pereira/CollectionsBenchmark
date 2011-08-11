@@ -79,11 +79,11 @@ public class MapBenchmark extends CollectionBenchmark implements BenchMark {
 
 	private long testingHashMap() {
 		HashMap<Integer, Object> array = new HashMap<Integer, Object>();
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.put(i, i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		long time = (end - start);
 		refreshTotalTime(time);
 		return time;
@@ -92,11 +92,11 @@ public class MapBenchmark extends CollectionBenchmark implements BenchMark {
 
 	private long testingMapHashMap() {
 		Map<Integer, Object> array = new HashMap<Integer, Object>();
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.put(i, i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		long time = (end - start);
 		refreshTotalTime(time);
 		return time;
@@ -105,11 +105,11 @@ public class MapBenchmark extends CollectionBenchmark implements BenchMark {
 
 	private long testingAbstractMapHashMap() {
 		AbstractMap<Integer, Object> array = new HashMap<Integer, Object>();
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.put(i, i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		long time = (end - start);
 		refreshTotalTime(time);
 		return time;
@@ -118,11 +118,11 @@ public class MapBenchmark extends CollectionBenchmark implements BenchMark {
 
 	private long testingLinkedHashMap() {
 		LinkedHashMap<Integer, Object> array = new LinkedHashMap<Integer, Object>();
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.put(i, i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		long time = (end - start);
 		refreshTotalTime(time);
 		return time;
@@ -131,11 +131,11 @@ public class MapBenchmark extends CollectionBenchmark implements BenchMark {
 
 	private long testingHashMapLinkedHashMap() {
 		HashMap<Integer, Object> array = new LinkedHashMap<Integer, Object>();
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.put(i, i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		long time = (end - start);
 		refreshTotalTime(time);
 		return time;
@@ -144,11 +144,11 @@ public class MapBenchmark extends CollectionBenchmark implements BenchMark {
 
 	private long testingMapLinkedHashMap() {
 		Map<Integer, Object> array = new LinkedHashMap<Integer, Object>();
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.put(i, i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		long time = (end - start);
 		refreshTotalTime(time);
 		return time;
@@ -157,11 +157,11 @@ public class MapBenchmark extends CollectionBenchmark implements BenchMark {
 
 	private long testingAbstractMapLinkedHashMap() {
 		AbstractMap<Integer, Object> array = new LinkedHashMap<Integer, Object>();
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.put(i, i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		long time = (end - start);
 		refreshTotalTime(time);
 		return time;
@@ -170,11 +170,11 @@ public class MapBenchmark extends CollectionBenchmark implements BenchMark {
 
 	private long testingHashTable() {
 		Hashtable<Integer, Object> array = new Hashtable<Integer, Object>();
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.put(i, i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		long time = (end - start);
 		refreshTotalTime(time);
 		return time;
@@ -183,11 +183,11 @@ public class MapBenchmark extends CollectionBenchmark implements BenchMark {
 
 	private long testingDictionaryHashTable() {
 		Dictionary<Integer, Object> array = new Hashtable<Integer, Object>();
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.put(i, i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		long time = (end - start);
 		refreshTotalTime(time);
 		return time;
@@ -196,11 +196,11 @@ public class MapBenchmark extends CollectionBenchmark implements BenchMark {
 
 	private long testingMapHashTable() {
 		Map<Integer, Object> array = new Hashtable<Integer, Object>();
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.put(i, i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		long time = (end - start);
 		refreshTotalTime(time);
 		return time;
@@ -209,11 +209,11 @@ public class MapBenchmark extends CollectionBenchmark implements BenchMark {
 
 	private long testingTreeMap() {
 		TreeMap<Integer, Object> array = new TreeMap<Integer, Object>();
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.put(i, i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		long time = (end - start);
 		refreshTotalTime(time);
 		return time;
@@ -222,11 +222,11 @@ public class MapBenchmark extends CollectionBenchmark implements BenchMark {
 
 	private long testingMapTreeMap() {
 		Map<Integer, Object> array = new TreeMap<Integer, Object>();
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.put(i, i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		long time = (end - start);
 		refreshTotalTime(time);
 		return time;
@@ -235,11 +235,11 @@ public class MapBenchmark extends CollectionBenchmark implements BenchMark {
 
 	private long testingAbstractMapTreeMap() {
 		AbstractMap<Integer, Object> array = new TreeMap<Integer, Object>();
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.put(i, i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		long time = (end - start);
 		refreshTotalTime(time);
 		return time;
@@ -248,11 +248,11 @@ public class MapBenchmark extends CollectionBenchmark implements BenchMark {
 
 	private long testingNavigableMapTreeMap() {
 		NavigableMap<Integer, Object> array = new TreeMap<Integer, Object>();
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.put(i, i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		long time = (end - start);
 		refreshTotalTime(time);
 		return time;
@@ -261,11 +261,11 @@ public class MapBenchmark extends CollectionBenchmark implements BenchMark {
 
 	private long testingSortedMapTreeMap() {
 		SortedMap<Integer, Object> array = new TreeMap<Integer, Object>();
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.put(i, i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		long time = (end - start);
 		refreshTotalTime(time);
 		return time;
@@ -274,11 +274,11 @@ public class MapBenchmark extends CollectionBenchmark implements BenchMark {
 
 	private long testingWeakHashMap() {
 		WeakHashMap<Integer, Object> array = new WeakHashMap<Integer, Object>();
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.put(i, i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		long time = (end - start);
 		refreshTotalTime(time);
 		return time;
@@ -287,11 +287,11 @@ public class MapBenchmark extends CollectionBenchmark implements BenchMark {
 
 	private long testingMapWeakHashMap() {
 		Map<Integer, Object> array = new WeakHashMap<Integer, Object>();
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.put(i, i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		long time = (end - start);
 		refreshTotalTime(time);
 		return time;
@@ -300,11 +300,11 @@ public class MapBenchmark extends CollectionBenchmark implements BenchMark {
 
 	private long testingAbstractMapWeakHashMap() {
 		AbstractMap<Integer, Object> array = new WeakHashMap<Integer, Object>();
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.put(i, i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		long time = (end - start);
 		refreshTotalTime(time);
 		return time;
@@ -313,11 +313,11 @@ public class MapBenchmark extends CollectionBenchmark implements BenchMark {
 
 	private long testingConcurrentHashMap() {
 		ConcurrentHashMap<Integer, Object> array = new ConcurrentHashMap<Integer, Object>();
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.put(i, i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		long time = (end - start);
 		refreshTotalTime(time);
 		return time;
@@ -326,11 +326,11 @@ public class MapBenchmark extends CollectionBenchmark implements BenchMark {
 
 	private long testingConcurrentMapConcurrentHashMap() {
 		ConcurrentMap<Integer, Object> array = new ConcurrentHashMap<Integer, Object>();
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.put(i, i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		long time = (end - start);
 		refreshTotalTime(time);
 		return time;
@@ -339,11 +339,11 @@ public class MapBenchmark extends CollectionBenchmark implements BenchMark {
 
 	private long testingMapConcurrentHashMap() {
 		Map<Integer, Object> array = new ConcurrentHashMap<Integer, Object>();
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.put(i, i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		long time = (end - start);
 		refreshTotalTime(time);
 		return time;
@@ -352,11 +352,11 @@ public class MapBenchmark extends CollectionBenchmark implements BenchMark {
 
 	private long testingAbstractMapConcurrentHashMap() {
 		AbstractMap<Integer, Object> array = new ConcurrentHashMap<Integer, Object>();
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.put(i, i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		long time = (end - start);
 		refreshTotalTime(time);
 		return time;
@@ -365,11 +365,11 @@ public class MapBenchmark extends CollectionBenchmark implements BenchMark {
 
 	private long testingIdentityHashMap() {
 		IdentityHashMap<Integer, Object> array = new IdentityHashMap<Integer, Object>();
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.put(i, i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		long time = (end - start);
 		refreshTotalTime(time);
 		return time;
@@ -378,11 +378,11 @@ public class MapBenchmark extends CollectionBenchmark implements BenchMark {
 
 	private long testingMapIdentityHashMap() {
 		Map<Integer, Object> array = new IdentityHashMap<Integer, Object>();
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.put(i, i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		long time = (end - start);
 		refreshTotalTime(time);
 		return time;
@@ -391,11 +391,11 @@ public class MapBenchmark extends CollectionBenchmark implements BenchMark {
 
 	private long testingAbstractMapIdentityHashMap() {
 		AbstractMap<Integer, Object> array = new IdentityHashMap<Integer, Object>();
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.put(i, i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		long time = (end - start);
 		refreshTotalTime(time);
 		return time;
@@ -404,11 +404,11 @@ public class MapBenchmark extends CollectionBenchmark implements BenchMark {
 
 	private long testingConcurrentSkipListMap() {
 		ConcurrentSkipListMap<Integer, Object> array = new ConcurrentSkipListMap<Integer, Object>();
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.put(i, i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		long time = (end - start);
 		refreshTotalTime(time);
 		return time;
@@ -417,11 +417,11 @@ public class MapBenchmark extends CollectionBenchmark implements BenchMark {
 
 	private long testingMapConcurrentSkipListMap() {
 		Map<Integer, Object> array = new ConcurrentSkipListMap<Integer, Object>();
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.put(i, i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		long time = (end - start);
 		refreshTotalTime(time);
 		return time;
@@ -430,11 +430,11 @@ public class MapBenchmark extends CollectionBenchmark implements BenchMark {
 
 	private long testingAbstractMapConcurrentSkipListMap() {
 		AbstractMap<Integer, Object> array = new ConcurrentSkipListMap<Integer, Object>();
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.put(i, i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		long time = (end - start);
 		refreshTotalTime(time);
 		return time;
@@ -443,11 +443,11 @@ public class MapBenchmark extends CollectionBenchmark implements BenchMark {
 
 	private long testingConcurrentMapConcurrentSkipListMap() {
 		ConcurrentMap<Integer, Object> array = new ConcurrentSkipListMap<Integer, Object>();
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.put(i, i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		long time = (end - start);
 		refreshTotalTime(time);
 		return time;
@@ -456,11 +456,11 @@ public class MapBenchmark extends CollectionBenchmark implements BenchMark {
 
 	private long testingConcurrentNavigableMapConcurrentSkipListMap() {
 		ConcurrentNavigableMap<Integer, Object> array = new ConcurrentSkipListMap<Integer, Object>();
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.put(i, i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		long time = (end - start);
 		refreshTotalTime(time);
 		return time;
@@ -469,11 +469,11 @@ public class MapBenchmark extends CollectionBenchmark implements BenchMark {
 
 	private long testingNavigableMapConcurrentSkipListMap() {
 		NavigableMap<Integer, Object> array = new ConcurrentSkipListMap<Integer, Object>();
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.put(i, i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		long time = (end - start);
 		refreshTotalTime(time);
 		return time;
@@ -482,11 +482,11 @@ public class MapBenchmark extends CollectionBenchmark implements BenchMark {
 
 	private long testingSortedMapConcurrentSkipListMap() {
 		SortedMap<Integer, Object> array = new ConcurrentSkipListMap<Integer, Object>();
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.put(i, i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		long time = (end - start);
 		refreshTotalTime(time);
 		return time;

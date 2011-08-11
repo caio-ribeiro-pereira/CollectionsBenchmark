@@ -98,11 +98,11 @@ public class ListBenchmark extends CollectionBenchmark implements BenchMark {
 
 	private long testingArray() {
 		Object[] array = new Object[getMax()];
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array[i] = i;
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		long time = (end - start);
 		refreshTotalTime(time);
 
@@ -111,11 +111,11 @@ public class ListBenchmark extends CollectionBenchmark implements BenchMark {
 
 	private long testingArrayList() {
 		ArrayList<Object> array = new ArrayList<Object>();
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.add(i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		long time = (end - start);
 		refreshTotalTime(time);
 
@@ -124,11 +124,11 @@ public class ListBenchmark extends CollectionBenchmark implements BenchMark {
 
 	private long testingListArrayList() {
 		List<Object> array = new ArrayList<Object>();
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.add(i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		long time = (end - start);
 		refreshTotalTime(time);
 
@@ -137,11 +137,11 @@ public class ListBenchmark extends CollectionBenchmark implements BenchMark {
 
 	private long testingAbstractListArrayList() {
 		AbstractList<Object> array = new ArrayList<Object>();
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.add(i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		long time = (end - start);
 		refreshTotalTime(time);
 
@@ -150,11 +150,11 @@ public class ListBenchmark extends CollectionBenchmark implements BenchMark {
 
 	private long testingCollectionArrayList() {
 		Collection<Object> array = new ArrayList<Object>();
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.add(i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		long time = (end - start);
 		refreshTotalTime(time);
 
@@ -163,11 +163,11 @@ public class ListBenchmark extends CollectionBenchmark implements BenchMark {
 
 	private long testingAbstractCollectionArrayList() {
 		AbstractCollection<Object> array = new ArrayList<Object>();
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.add(i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		long time = (end - start);
 		refreshTotalTime(time);
 
@@ -176,11 +176,11 @@ public class ListBenchmark extends CollectionBenchmark implements BenchMark {
 
 	private long testingLinkedList() {
 		LinkedList<Object> array = new LinkedList<Object>();
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.add(i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		long time = (end - start);
 		refreshTotalTime(time);
 
@@ -189,11 +189,11 @@ public class ListBenchmark extends CollectionBenchmark implements BenchMark {
 
 	private long testingListLinkedList() {
 		List<Object> array = new LinkedList<Object>();
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.add(i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		long time = (end - start);
 		refreshTotalTime(time);
 
@@ -202,11 +202,11 @@ public class ListBenchmark extends CollectionBenchmark implements BenchMark {
 
 	private long testingAbstractListLinkedList() {
 		AbstractList<Object> array = new LinkedList<Object>();
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.add(i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		long time = (end - start);
 		refreshTotalTime(time);
 
@@ -215,11 +215,11 @@ public class ListBenchmark extends CollectionBenchmark implements BenchMark {
 
 	private long testingCollectionLinkedList() {
 		Collection<Object> array = new LinkedList<Object>();
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.add(i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		long time = (end - start);
 		refreshTotalTime(time);
 
@@ -228,11 +228,11 @@ public class ListBenchmark extends CollectionBenchmark implements BenchMark {
 
 	private long testingAbstractCollectionLinkedList() {
 		AbstractCollection<Object> array = new LinkedList<Object>();
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.add(i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		long time = (end - start);
 		refreshTotalTime(time);
 
@@ -241,11 +241,11 @@ public class ListBenchmark extends CollectionBenchmark implements BenchMark {
 
 	private long testingDequeLinkedList() {
 		Deque<Object> array = new LinkedList<Object>();
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.add(i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		long time = (end - start);
 		refreshTotalTime(time);
 
@@ -254,11 +254,11 @@ public class ListBenchmark extends CollectionBenchmark implements BenchMark {
 
 	private long testingQueueLinkedList() {
 		Queue<Object> array = new LinkedList<Object>();
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.add(i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		long time = (end - start);
 		refreshTotalTime(time);
 
@@ -267,11 +267,11 @@ public class ListBenchmark extends CollectionBenchmark implements BenchMark {
 
 	private long testingAbstractSequentialListLinkedList() {
 		AbstractSequentialList<Object> array = new LinkedList<Object>();
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.add(i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		long time = (end - start);
 		refreshTotalTime(time);
 
@@ -280,11 +280,11 @@ public class ListBenchmark extends CollectionBenchmark implements BenchMark {
 
 	private long testingStack() {
 		Stack<Object> array = new Stack<Object>();
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.add(i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		long time = (end - start);
 		refreshTotalTime(time);
 
@@ -293,11 +293,11 @@ public class ListBenchmark extends CollectionBenchmark implements BenchMark {
 
 	private long testingListStack() {
 		List<Object> array = new Stack<Object>();
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.add(i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		long time = (end - start);
 		refreshTotalTime(time);
 
@@ -306,11 +306,11 @@ public class ListBenchmark extends CollectionBenchmark implements BenchMark {
 
 	private long testingAbstractListStack() {
 		AbstractList<Object> array = new Stack<Object>();
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.add(i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		long time = (end - start);
 		refreshTotalTime(time);
 
@@ -319,11 +319,11 @@ public class ListBenchmark extends CollectionBenchmark implements BenchMark {
 
 	private long testingCollectionStack() {
 		Collection<Object> array = new Stack<Object>();
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.add(i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		long time = (end - start);
 		refreshTotalTime(time);
 
@@ -332,11 +332,11 @@ public class ListBenchmark extends CollectionBenchmark implements BenchMark {
 
 	private long testingAbstractCollectionStack() {
 		AbstractCollection<Object> array = new Stack<Object>();
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.add(i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		long time = (end - start);
 		refreshTotalTime(time);
 
@@ -345,11 +345,11 @@ public class ListBenchmark extends CollectionBenchmark implements BenchMark {
 
 	private long testingVectorStack() {
 		Vector<Object> array = new Stack<Object>();
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.add(i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		long time = (end - start);
 		refreshTotalTime(time);
 
@@ -358,11 +358,11 @@ public class ListBenchmark extends CollectionBenchmark implements BenchMark {
 
 	private long testingVector() {
 		Vector<Object> array = new Vector<Object>();
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.add(i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		long time = (end - start);
 		refreshTotalTime(time);
 
@@ -371,11 +371,11 @@ public class ListBenchmark extends CollectionBenchmark implements BenchMark {
 
 	private long testingListVector() {
 		List<Object> array = new Vector<Object>();
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.add(i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		long time = (end - start);
 		refreshTotalTime(time);
 
@@ -384,11 +384,11 @@ public class ListBenchmark extends CollectionBenchmark implements BenchMark {
 
 	private long testingAbstractListVector() {
 		AbstractList<Object> array = new Vector<Object>();
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.add(i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		long time = (end - start);
 		refreshTotalTime(time);
 
@@ -397,11 +397,11 @@ public class ListBenchmark extends CollectionBenchmark implements BenchMark {
 
 	private long testingCollectionVector() {
 		Collection<Object> array = new Vector<Object>();
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.add(i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		long time = (end - start);
 		refreshTotalTime(time);
 
@@ -410,11 +410,11 @@ public class ListBenchmark extends CollectionBenchmark implements BenchMark {
 
 	private long testingAbstractCollectionVector() {
 		AbstractCollection<Object> array = new Vector<Object>();
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.add(i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		long time = (end - start);
 		refreshTotalTime(time);
 
@@ -423,11 +423,11 @@ public class ListBenchmark extends CollectionBenchmark implements BenchMark {
 
 	private long testingArrayDeque() {
 		ArrayDeque<Object> array = new ArrayDeque<Object>();
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.add(i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		long time = (end - start);
 		refreshTotalTime(time);
 		return time;
@@ -436,11 +436,11 @@ public class ListBenchmark extends CollectionBenchmark implements BenchMark {
 
 	private long testingDequeArrayDeque() {
 		Deque<Object> array = new ArrayDeque<Object>();
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.add(i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		long time = (end - start);
 		refreshTotalTime(time);
 		return time;
@@ -449,11 +449,11 @@ public class ListBenchmark extends CollectionBenchmark implements BenchMark {
 
 	private long testingQueueArrayDeque() {
 		Queue<Object> array = new ArrayDeque<Object>();
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.add(i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		long time = (end - start);
 		refreshTotalTime(time);
 		return time;
@@ -462,11 +462,11 @@ public class ListBenchmark extends CollectionBenchmark implements BenchMark {
 
 	private long testingCollectionArrayDeque() {
 		Collection<Object> array = new ArrayDeque<Object>();
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.add(i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		long time = (end - start);
 		refreshTotalTime(time);
 		return time;
@@ -475,11 +475,11 @@ public class ListBenchmark extends CollectionBenchmark implements BenchMark {
 
 	private long testingAbstractCollectionArrayDeque() {
 		AbstractCollection<Object> array = new ArrayDeque<Object>();
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.add(i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		long time = (end - start);
 		refreshTotalTime(time);
 		return time;
@@ -488,11 +488,11 @@ public class ListBenchmark extends CollectionBenchmark implements BenchMark {
 
 	private long testingLinkedBlockingDeque() {
 		LinkedBlockingDeque<Object> array = new LinkedBlockingDeque<Object>();
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.add(i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		long time = (end - start);
 		refreshTotalTime(time);
 		return time;
@@ -501,11 +501,11 @@ public class ListBenchmark extends CollectionBenchmark implements BenchMark {
 
 	private long testingAbstractQueueLinkedBlockingDeque() {
 		AbstractQueue<Object> array = new LinkedBlockingDeque<Object>();
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.add(i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		long time = (end - start);
 		refreshTotalTime(time);
 		return time;
@@ -514,11 +514,11 @@ public class ListBenchmark extends CollectionBenchmark implements BenchMark {
 
 	private long testingQueueLinkedBlockingDeque() {
 		Queue<Object> array = new LinkedBlockingDeque<Object>();
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.add(i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		long time = (end - start);
 		refreshTotalTime(time);
 		return time;
@@ -527,11 +527,11 @@ public class ListBenchmark extends CollectionBenchmark implements BenchMark {
 
 	private long testingDequeLinkedBlockingDeque() {
 		Deque<Object> array = new LinkedBlockingDeque<Object>();
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.add(i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		long time = (end - start);
 		refreshTotalTime(time);
 		return time;
@@ -540,11 +540,11 @@ public class ListBenchmark extends CollectionBenchmark implements BenchMark {
 
 	private long testingBlockingDequeLinkedBlockingDeque() {
 		BlockingDeque<Object> array = new LinkedBlockingDeque<Object>();
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.add(i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		long time = (end - start);
 		refreshTotalTime(time);
 		return time;
@@ -553,11 +553,11 @@ public class ListBenchmark extends CollectionBenchmark implements BenchMark {
 
 	private long testingBlockingQueueLinkedBlockingDeque() {
 		BlockingQueue<Object> array = new LinkedBlockingDeque<Object>();
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.add(i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		long time = (end - start);
 		refreshTotalTime(time);
 		return time;
@@ -566,11 +566,11 @@ public class ListBenchmark extends CollectionBenchmark implements BenchMark {
 
 	private long testingCollectionLinkedBlockingDeque() {
 		Collection<Object> array = new LinkedBlockingDeque<Object>();
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.add(i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		long time = (end - start);
 		refreshTotalTime(time);
 		return time;
@@ -579,11 +579,11 @@ public class ListBenchmark extends CollectionBenchmark implements BenchMark {
 
 	private long testingAbstractCollectionLinkedBlockingDeque() {
 		AbstractCollection<Object> array = new LinkedBlockingDeque<Object>();
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.add(i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		long time = (end - start);
 		refreshTotalTime(time);
 		return time;
@@ -592,11 +592,11 @@ public class ListBenchmark extends CollectionBenchmark implements BenchMark {
 
 	private long testingCopyOnWriteArrayList() {
 		CopyOnWriteArrayList<Object> array = new CopyOnWriteArrayList<Object>();
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.add(i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		long time = (end - start);
 		refreshTotalTime(time);
 
@@ -605,11 +605,11 @@ public class ListBenchmark extends CollectionBenchmark implements BenchMark {
 
 	private long testingListCopyOnWriteArrayList() {
 		List<Object> array = new CopyOnWriteArrayList<Object>();
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.add(i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		long time = (end - start);
 		refreshTotalTime(time);
 
@@ -618,11 +618,11 @@ public class ListBenchmark extends CollectionBenchmark implements BenchMark {
 
 	private long testingCollectionCopyOnWriteArrayList() {
 		Collection<Object> array = new CopyOnWriteArrayList<Object>();
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.add(i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		long time = (end - start);
 		refreshTotalTime(time);
 
@@ -631,11 +631,11 @@ public class ListBenchmark extends CollectionBenchmark implements BenchMark {
 
 	private long testingRoleList() {
 		RoleList array = new RoleList();
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.add(i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		long time = (end - start);
 		refreshTotalTime(time);
 
@@ -644,11 +644,11 @@ public class ListBenchmark extends CollectionBenchmark implements BenchMark {
 
 	private long testingListRoleList() {
 		List<Object> array = new RoleList();
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.add(i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		long time = (end - start);
 		refreshTotalTime(time);
 
@@ -657,11 +657,11 @@ public class ListBenchmark extends CollectionBenchmark implements BenchMark {
 
 	private long testingAbstractListRoleList() {
 		AbstractList<Object> array = new RoleList();
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.add(i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		long time = (end - start);
 		refreshTotalTime(time);
 
@@ -670,11 +670,11 @@ public class ListBenchmark extends CollectionBenchmark implements BenchMark {
 
 	private long testingCollectionRoleList() {
 		Collection<Object> array = new RoleList();
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.add(i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		long time = (end - start);
 		refreshTotalTime(time);
 
@@ -683,11 +683,11 @@ public class ListBenchmark extends CollectionBenchmark implements BenchMark {
 
 	private long testingAbstractCollectionRoleList() {
 		AbstractCollection<Object> array = new RoleList();
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.add(i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		long time = (end - start);
 		refreshTotalTime(time);
 
@@ -696,11 +696,11 @@ public class ListBenchmark extends CollectionBenchmark implements BenchMark {
 
 	private long testingArrayListRoleList() {
 		ArrayList<Object> array = new RoleList();
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.add(i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		long time = (end - start);
 		refreshTotalTime(time);
 

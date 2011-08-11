@@ -75,11 +75,11 @@ public class SetBenchmark extends CollectionBenchmark implements BenchMark {
 		HashSet<Object> array = new HashSet<Object>();
 		long time = 0;
 
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.add(i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		time += (end - start);
 		refreshTotalTime(time);
 		return time;
@@ -90,11 +90,11 @@ public class SetBenchmark extends CollectionBenchmark implements BenchMark {
 		Set<Object> array = new HashSet<Object>();
 		long time = 0;
 
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.add(i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		time += (end - start);
 		refreshTotalTime(time);
 		return time;
@@ -105,11 +105,11 @@ public class SetBenchmark extends CollectionBenchmark implements BenchMark {
 		Collection<Object> array = new HashSet<Object>();
 		long time = 0;
 
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.add(i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		time += (end - start);
 		refreshTotalTime(time);
 		return time;
@@ -120,11 +120,11 @@ public class SetBenchmark extends CollectionBenchmark implements BenchMark {
 		AbstractCollection<Object> array = new HashSet<Object>();
 		long time = 0;
 
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.add(i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		time += (end - start);
 		refreshTotalTime(time);
 		return time;
@@ -135,11 +135,11 @@ public class SetBenchmark extends CollectionBenchmark implements BenchMark {
 		AbstractSet<Object> array = new HashSet<Object>();
 		long time = 0;
 
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.add(i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		time += (end - start);
 		refreshTotalTime(time);
 		return time;
@@ -150,11 +150,11 @@ public class SetBenchmark extends CollectionBenchmark implements BenchMark {
 		LinkedHashSet<Object> array = new LinkedHashSet<Object>();
 		long time = 0;
 
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.add(i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		time += (end - start);
 		refreshTotalTime(time);
 		return time;
@@ -165,11 +165,11 @@ public class SetBenchmark extends CollectionBenchmark implements BenchMark {
 		HashSet<Object> array = new LinkedHashSet<Object>();
 		long time = 0;
 
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.add(i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		time += (end - start);
 		refreshTotalTime(time);
 		return time;
@@ -180,11 +180,11 @@ public class SetBenchmark extends CollectionBenchmark implements BenchMark {
 		AbstractSet<Object> array = new LinkedHashSet<Object>();
 		long time = 0;
 
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.add(i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		time += (end - start);
 		refreshTotalTime(time);
 		return time;
@@ -195,11 +195,11 @@ public class SetBenchmark extends CollectionBenchmark implements BenchMark {
 		AbstractCollection<Object> array = new LinkedHashSet<Object>();
 		long time = 0;
 
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.add(i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		time += (end - start);
 		refreshTotalTime(time);
 		return time;
@@ -210,11 +210,11 @@ public class SetBenchmark extends CollectionBenchmark implements BenchMark {
 		Collection<Object> array = new LinkedHashSet<Object>();
 		long time = 0;
 
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.add(i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		time += (end - start);
 		refreshTotalTime(time);
 		return time;
@@ -225,11 +225,11 @@ public class SetBenchmark extends CollectionBenchmark implements BenchMark {
 		Set<Object> array = new LinkedHashSet<Object>();
 		long time = 0;
 
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.add(i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		time += (end - start);
 		refreshTotalTime(time);
 		return time;
@@ -240,11 +240,11 @@ public class SetBenchmark extends CollectionBenchmark implements BenchMark {
 		TreeSet<Object> array = new TreeSet<Object>();
 		long time = 0;
 
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.add(i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		time += (end - start);
 		refreshTotalTime(time);
 		return time;
@@ -255,11 +255,11 @@ public class SetBenchmark extends CollectionBenchmark implements BenchMark {
 		SortedSet<Object> array = new TreeSet<Object>();
 		long time = 0;
 
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.add(i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		time += (end - start);
 		refreshTotalTime(time);
 		return time;
@@ -270,11 +270,11 @@ public class SetBenchmark extends CollectionBenchmark implements BenchMark {
 		NavigableSet<Object> array = new TreeSet<Object>();
 		long time = 0;
 
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.add(i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		time += (end - start);
 		refreshTotalTime(time);
 		return time;
@@ -285,11 +285,11 @@ public class SetBenchmark extends CollectionBenchmark implements BenchMark {
 		Set<Object> array = new TreeSet<Object>();
 		long time = 0;
 
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.add(i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		time += (end - start);
 		refreshTotalTime(time);
 		return time;
@@ -300,11 +300,11 @@ public class SetBenchmark extends CollectionBenchmark implements BenchMark {
 		AbstractSet<Object> array = new TreeSet<Object>();
 		long time = 0;
 
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.add(i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		time += (end - start);
 		refreshTotalTime(time);
 		return time;
@@ -315,11 +315,11 @@ public class SetBenchmark extends CollectionBenchmark implements BenchMark {
 		Collection<Object> array = new TreeSet<Object>();
 		long time = 0;
 
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.add(i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		time += (end - start);
 		refreshTotalTime(time);
 		return time;
@@ -330,11 +330,11 @@ public class SetBenchmark extends CollectionBenchmark implements BenchMark {
 		AbstractCollection<Object> array = new TreeSet<Object>();
 		long time = 0;
 
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.add(i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		time += (end - start);
 		refreshTotalTime(time);
 		return time;
@@ -345,11 +345,11 @@ public class SetBenchmark extends CollectionBenchmark implements BenchMark {
 		ConcurrentSkipListSet<Object> array = new ConcurrentSkipListSet<Object>();
 		long time = 0;
 
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.add(i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		time += (end - start);
 		refreshTotalTime(time);
 		return time;
@@ -360,11 +360,11 @@ public class SetBenchmark extends CollectionBenchmark implements BenchMark {
 		NavigableSet<Object> array = new ConcurrentSkipListSet<Object>();
 		long time = 0;
 
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.add(i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		time += (end - start);
 		refreshTotalTime(time);
 		return time;
@@ -375,11 +375,11 @@ public class SetBenchmark extends CollectionBenchmark implements BenchMark {
 		SortedSet<Object> array = new ConcurrentSkipListSet<Object>();
 		long time = 0;
 
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.add(i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		time += (end - start);
 		refreshTotalTime(time);
 		return time;
@@ -390,11 +390,11 @@ public class SetBenchmark extends CollectionBenchmark implements BenchMark {
 		Set<Object> array = new ConcurrentSkipListSet<Object>();
 		long time = 0;
 
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.add(i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		time += (end - start);
 		refreshTotalTime(time);
 		return time;
@@ -405,11 +405,11 @@ public class SetBenchmark extends CollectionBenchmark implements BenchMark {
 		Collection<Object> array = new ConcurrentSkipListSet<Object>();
 		long time = 0;
 
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.add(i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		time += (end - start);
 		refreshTotalTime(time);
 		return time;
@@ -420,11 +420,11 @@ public class SetBenchmark extends CollectionBenchmark implements BenchMark {
 		AbstractCollection<Object> array = new ConcurrentSkipListSet<Object>();
 		long time = 0;
 
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.add(i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		time += (end - start);
 		refreshTotalTime(time);
 		return time;
@@ -435,11 +435,11 @@ public class SetBenchmark extends CollectionBenchmark implements BenchMark {
 		AbstractSet<Object> array = new ConcurrentSkipListSet<Object>();
 		long time = 0;
 
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.add(i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		time += (end - start);
 		refreshTotalTime(time);
 		return time;
@@ -450,11 +450,11 @@ public class SetBenchmark extends CollectionBenchmark implements BenchMark {
 		CopyOnWriteArraySet<Object> array = new CopyOnWriteArraySet<Object>();
 		long time = 0;
 
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.add(i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		time += (end - start);
 		refreshTotalTime(time);
 		return time;
@@ -465,11 +465,11 @@ public class SetBenchmark extends CollectionBenchmark implements BenchMark {
 		Set<Object> array = new CopyOnWriteArraySet<Object>();
 		long time = 0;
 
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.add(i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		time += (end - start);
 		refreshTotalTime(time);
 		return time;
@@ -480,11 +480,11 @@ public class SetBenchmark extends CollectionBenchmark implements BenchMark {
 		AbstractSet<Object> array = new CopyOnWriteArraySet<Object>();
 		long time = 0;
 
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.add(i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		time += (end - start);
 		refreshTotalTime(time);
 		return time;
@@ -495,11 +495,11 @@ public class SetBenchmark extends CollectionBenchmark implements BenchMark {
 		Collection<Object> array = new CopyOnWriteArraySet<Object>();
 		long time = 0;
 
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.add(i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		time += (end - start);
 		refreshTotalTime(time);
 		return time;
@@ -510,11 +510,11 @@ public class SetBenchmark extends CollectionBenchmark implements BenchMark {
 		AbstractCollection<Object> array = new CopyOnWriteArraySet<Object>();
 		long time = 0;
 
-		long start = System.nanoTime();
+		long start = System.currentTimeMillis();
 		for (int i = 0; i < getMax(); i++) {
 			array.add(i);
 		}
-		long end = System.nanoTime();
+		long end = System.currentTimeMillis();
 		time += (end - start);
 		refreshTotalTime(time);
 		return time;
